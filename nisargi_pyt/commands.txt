@@ -1,0 +1,112 @@
+Microsoft Windows [Version 10.0.19044.1949]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LJENG>Desktop
+'Desktop' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\LJENG>cd Desktop
+
+C:\Users\LJENG\Desktop>python -m venv myworld
+
+C:\Users\LJENG\Desktop>cd myworld
+
+C:\Users\LJENG\Desktop\myworld>cd scripts
+
+C:\Users\LJENG\Desktop\myworld\Scripts>activate
+
+(myworld) C:\Users\LJENG\Desktop\myworld\Scripts>deactivate
+C:\Users\LJENG\Desktop\myworld\Scripts>activate
+
+(myworld) C:\Users\LJENG\Desktop\myworld\Scripts>cd..
+
+(myworld) C:\Users\LJENG\Desktop\myworld>-m pip install django
+'-m' is not recognized as an internal or external command,
+operable program or batch file.
+
+(myworld) C:\Users\LJENG\Desktop\myworld>python -m pip install django
+Collecting django
+  Obtaining dependency information for django from https://files.pythonhosted.org/packages/94/5b/1328f8b84fce040c404f76822bf8c57d254e368e8cbd8bd67ec2b26d75f5/django-6.0.5-py3-none-any.whl.metadata
+  Downloading django-6.0.5-py3-none-any.whl.metadata (3.9 kB)
+Collecting asgiref>=3.9.1 (from django)
+  Obtaining dependency information for asgiref>=3.9.1 from https://files.pythonhosted.org/packages/5c/0a/a72d10ed65068e115044937873362e6e32fab1b7dce0046aeb224682c989/asgiref-3.11.1-py3-none-any.whl.metadata
+  Using cached asgiref-3.11.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting sqlparse>=0.5.0 (from django)
+  Obtaining dependency information for sqlparse>=0.5.0 from https://files.pythonhosted.org/packages/49/4b/359f28a903c13438ef59ebeee215fb25da53066db67b305c125f1c6d2a25/sqlparse-0.5.5-py3-none-any.whl.metadata
+  Using cached sqlparse-0.5.5-py3-none-any.whl.metadata (4.7 kB)
+Collecting tzdata (from django)
+  Obtaining dependency information for tzdata from https://files.pythonhosted.org/packages/ce/e4/dccd7f47c4b64213ac01ef921a1337ee6e30e8c6466046018326977efd95/tzdata-2026.2-py2.py3-none-any.whl.metadata
+  Downloading tzdata-2026.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading django-6.0.5-py3-none-any.whl (8.4 MB)
+   ---------------------------------------- 8.4/8.4 MB 3.0 MB/s eta 0:00:00
+Using cached asgiref-3.11.1-py3-none-any.whl (24 kB)
+Using cached sqlparse-0.5.5-py3-none-any.whl (46 kB)
+Downloading tzdata-2026.2-py2.py3-none-any.whl (349 kB)
+   ---------------------------------------- 349.3/349.3 kB 2.0 MB/s eta 0:00:00
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.11.1 django-6.0.5 sqlparse-0.5.5 tzdata-2026.2
+
+[notice] A new release of pip is available: 23.2.1 -> 26.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(myworld) C:\Users\LJENG\Desktop\myworld>python -m pip django version
+ERROR: unknown command "django"
+
+(myworld) C:\Users\LJENG\Desktop\myworld>python -m pip django --version
+ERROR: unknown command "django"
+
+(myworld) C:\Users\LJENG\Desktop\myworld>python -m django --version
+6.0.5
+
+(myworld) C:\Users\LJENG\Desktop\myworld>django admin --version
+'django' is not recognized as an internal or external command,
+operable program or batch file.
+
+(myworld) C:\Users\LJENG\Desktop\myworld>djang- admin --version
+'djang-' is not recognized as an internal or external command,
+operable program or batch file.
+
+(myworld) C:\Users\LJENG\Desktop\myworld>django -admin --version
+'django' is not recognized as an internal or external command,
+operable program or batch file.
+
+(myworld) C:\Users\LJENG\Desktop\myworld>django-admin --version
+6.0.5
+
+(myworld) C:\Users\LJENG\Desktop\myworld>cd..
+
+(myworld) C:\Users\LJENG\Desktop>python -m django startproject demo1
+
+(myworld) C:\Users\LJENG\Desktop>cd demo1
+
+(myworld) C:\Users\LJENG\Desktop\demo1>DIR
+ Volume in drive C is Win 10
+ Volume Serial Number is 3624-2097
+
+ Directory of C:\Users\LJENG\Desktop\demo1
+
+01-06-2026  10:13    <DIR>          .
+01-06-2026  10:13    <DIR>          ..
+01-06-2026  10:13    <DIR>          demo1
+01-06-2026  10:13               683 manage.py
+               1 File(s)            683 bytes
+               3 Dir(s)  34,970,988,544 bytes free
+
+(myworld) C:\Users\LJENG\Desktop\demo1>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 01, 2026 - 10:17:35
+Django version 6.0.5, using settings 'demo1.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+[01/Jun/2026 10:17:54] "GET / HTTP/1.1" 200 12068
+Not Found: /favicon.ico
+[01/Jun/2026 10:17:54] "GET /favicon.ico HTTP/1.1" 404 2207
